@@ -1,0 +1,21 @@
+.btnBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: crimson;
+
+    ion-button {
+        width: 150px;
+        height: 150px;
+        color: #fff;
+        // --background: yellow;
+    
+        ion-icon {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<ion-content>
+  <h5 class="title">All Albums</h5>
+
+  <ion-row class="albums">
+    <ion-col size="6" class="ion-text-left padding-left0" *ngFor="let album of albums"
+      routerLink="/album-details/{{album.id}}">
+      <img [src]="album?.image" alt="">
+      <h6>{{ album?.name }}</h6>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

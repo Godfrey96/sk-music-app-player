@@ -1,0 +1,97 @@
+ion-content {
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    --padding-start: 26px;
+    --padding-end: 26px;
+}
+
+.title {
+    margin-top: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.music {
+    margin-top: 20px;
+
+    ion-col {
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h6 {
+            margin-top: 5px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}
+
+.padding-left0 {
+    padding-left: 0 !important;
+}
+
+.padding-right0 {
+    padding-right: 0 !important;
+}
+
+// media player scss
+ion-item{
+    ion-thumbnail{
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    ion-label{
+        h2,p{
+            font-weight: bold;
+        }
+    }
+}
+
+#miniPlayer{
+    box-shadow: 0px -4px 10px rgba(0,0,0,.1);
+    border-radius: 10px 10px 0 0;
+    transition: 0.5s;
+    // hide by default by setting bottom value in negative
+    bottom: -100px;
+
+    ion-progress-bar{
+        z-index: 10;
+    }
+}
+
+#fullPlayer{
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 20;
+    // hide by default by setting bottom value in negative
+    bottom: -1000px;
+
+    // current song image
+    #currImg{
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    p{
+        color: #8c8c8c;
+        margin: 0;
+    }
+
+    ion-text{
+        font-size: medium;
+    }
+}

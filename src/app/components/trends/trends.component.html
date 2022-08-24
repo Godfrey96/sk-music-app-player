@@ -1,0 +1,12 @@
+<div class="song-slider ion-padding-start">
+  <swiper [config]="trendConfig">
+    <ng-template swiperSlide *ngFor="let trend of featuredSongs">
+      <ion-row>
+        <ion-col size="12" routerLink="/song-details/{{trend.id}}" routerDirection="forward">
+          <img [src]="trend?.image" />
+          <h6 class="ion-text-center">{{ trend?.title }}</h6>
+        </ion-col>
+      </ion-row>
+    </ng-template>
+  </swiper>
+</div>

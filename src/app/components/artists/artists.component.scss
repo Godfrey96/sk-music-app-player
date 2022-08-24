@@ -1,0 +1,13 @@
+ion-avatar{
+    width: 120px;
+    height: 120px;
+    img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+
+ion-col:focus {
+    outline: none !important;
+}
